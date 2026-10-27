@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Small Business AI & Cyber Hygiene Blueprint</title>
+  <meta name="description" content="A 10-page, jargon-free action guide that helps small business owners stop phishing, payment fraud, ransomware and AI data leaks in 30 days.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] } } }
+    }
+  </script>
+  <style>
+    details summary::-webkit-details-marker { display: none; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-emerald-400/30">
+
+  <!-- Background glow -->
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0 overflow-hidden">
+    <div class="absolute -top-40 left-1/2 h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-indigo-600/20 blur-3xl"></div>
+    <div class="absolute top-[30rem] -right-40 h-[28rem] w-[28rem] rounded-full bg-emerald-500/10 blur-3xl"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(148,163,184,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.05)_1px,transparent_1px)] bg-[size:48px_48px] [mask-image:radial-gradient(ellipse_at_top,black_30%,transparent_75%)]"></div>
+  </div>
+
+  <main class="relative">
+
+    <!-- HERO -->
+    <section class="mx-auto max-w-4xl px-4 sm:px-6 pt-20 pb-12 text-center">
+      <span class="inline-flex items-center gap-2 rounded-full border border-indigo-400/20 bg-indigo-500/10 px-4 py-1.5 text-sm font-medium text-indigo-300 backdrop-blur">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6l7-3z"/></svg>
+        The Small Business AI &amp; Cyber Hygiene Blueprint
+      </span>
+
+      <h1 class="mt-6 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.08] text-white">
+        Protect your business from
+        <span class="bg-gradient-to-r from-emerald-300 via-teal-300 to-indigo-300 bg-clip-text text-transparent">cyber attacks &amp; AI data leaks</span>
+      </h1>
+
+      <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-400 leading-relaxed">
+        A 10-page, jargon-free action plan for small business owners and freelancers. Tick through simple checklists and lock down the essentials in 30 days, no IT department required.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="#pricing" class="w-full sm:w-auto rounded-xl bg-gradient-to-r from-emerald-400 to-teal-400 px-8 py-4 text-base font-bold text-slate-950 shadow-lg shadow-emerald-500/20 transition hover:shadow-emerald-500/40 hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
+          Get the Blueprint for $19
+        </a>
+        <a href="#inside" class="w-full sm:w-auto rounded-xl border border-slate-700 bg-slate-900/50 px-8 py-4 text-base font-semibold text-slate-200 backdrop-blur transition hover:border-slate-500 hover:bg-slate-800/60">
+          See what's inside
+        </a>
+      </div>
+
+      <ul class="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-slate-500">
+        <li class="flex items-center gap-2"><svg class="h-4 w-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Instant PDF download</li>
+        <li class="flex items-center gap-2"><svg class="h-4 w-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Built for non-technical owners</li>
+        <li class="flex items-center gap-2"><svg class="h-4 w-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>7-day money-back guarantee</li>
+      </ul>
+    </section>
+
+    <!-- URGENCY & STATISTICS -->
+    <section class="mx-auto max-w-5xl px-4 sm:px-6 py-12">
+      <div class="text-center">
+        <p class="text-sm font-semibold uppercase tracking-widest text-rose-300/80">Why this matters now</p>
+        <h2 class="mt-3 text-2xl sm:text-3xl font-bold tracking-tight text-white">Small businesses are a prime target</h2>
+        <p class="mx-auto mt-3 max-w-2xl text-slate-400">Attackers go where the money is and the defenses are thin. These are the latest figures from the FBI and Verizon.</p>
+      </div>
+
+      <div class="mt-10 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6 backdrop-blur-xl">
+          <p class="text-4xl font-extrabold tracking-tight bg-gradient-to-br from-rose-300 to-orange-300 bg-clip-text text-transparent">88%</p>
+          <p class="mt-3 text-sm leading-relaxed text-slate-300">of small and mid-sized business breaches involved ransomware, versus 39% at large companies.</p>
+          <p class="mt-4 text-xs text-slate-500">Verizon 2025 Data Breach Investigations Report</p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6 backdrop-blur-xl">
+          <p class="text-4xl font-extrabold tracking-tight bg-gradient-to-br from-amber-300 to-yellow-200 bg-clip-text text-transparent">$3.05B</p>
+          <p class="mt-3 text-sm leading-relaxed text-slate-300">lost to business email compromise in 2025: fake invoices, spoofed bosses and hijacked vendor emails.</p>
+          <p class="mt-4 text-xs text-slate-500">FBI IC3 2025 Internet Crime Report</p>
+        </div>
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6 backdrop-blur-xl">
+          <p class="text-4xl font-extrabold tracking-tight bg-gradient-to-br from-indigo-300 to-sky-300 bg-clip-text text-transparent">~$123K</p>
+          <p class="mt-3 text-sm leading-relaxed text-slate-300">average reported loss per business email compromise complaint, across 24,768 cases.</p>
+          <p class="mt-4 text-xs text-slate-500">Calculated from FBI IC3 2025 data</p>
+        </div>
+      </div>
+
+      <div class="mt-6 flex items-start gap-3 rounded-2xl border border-rose-400/20 bg-rose-500/5 p-5 text-sm text-rose-100/90">
+        <svg class="mt-0.5 h-5 w-5 flex-none text-rose-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v4m0 4h.01M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg>
+        <p><span class="font-semibold text-rose-200">AI raised the stakes.</span> Scammers now write flawless phishing emails and clone voices, while employees paste client data into free chatbots. The old "look for typos" advice no longer works.</p>
+      </div>
+    </section>
+
+    <!-- WHAT YOU GET -->
+    <section id="inside" class="mx-auto max-w-5xl px-4 sm:px-6 py-12 scroll-mt-8">
+      <div class="text-center">
+        <p class="text-sm font-semibold uppercase tracking-widest text-emerald-300/80">What you get inside</p>
+        <h2 class="mt-3 text-2xl sm:text-3xl font-bold tracking-tight text-white">10 pages. 30 days. Checklists you can actually finish.</h2>
+      </div>
+
+      <ul class="mt-10 grid gap-4 sm:grid-cols-2">
+        <li class="flex gap-4 rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-900/80 to-slate-900/30 p-6 backdrop-blur-xl">
+          <span class="flex h-10 w-10 flex-none items-center justify-center rounded-xl bg-emerald-400/10 text-emerald-300 ring-1 ring-emerald-400/20">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          </span>
+          <p class="text-slate-400"><strong class="font-semibold text-white">AI data leak prevention:</strong> a simple traffic-light rule for what may (and may never) go into ChatGPT, Claude, Gemini or Copilot, plus a ready-to-sign AI use policy.</p>
+        </li>
+        <li class="flex gap-4 rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-900/80 to-slate-900/30 p-6 backdrop-blur-xl">
+          <span class="flex h-10 w-10 flex-none items-center justify-center rounded-xl bg-emerald-400/10 text-emerald-300 ring-1 ring-emerald-400/20">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.9 5.3a2 2 0 002.2 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </span>
+          <p class="text-slate-400"><strong class="font-semibold text-white">Phishing awareness:</strong> five red flags and a four-step STOP routine your whole team can use, including against AI-written emails and voice clones.</p>
+        </li>
+        <li class="flex gap-4 rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-900/80 to-slate-900/30 p-6 backdrop-blur-xl">
+          <span class="flex h-10 w-10 flex-none items-center justify-center rounded-xl bg-emerald-400/10 text-emerald-300 ring-1 ring-emerald-400/20">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.7 5.7L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.6a1 1 0 01.3-.7l6-6A6 6 0 1121 9z"/></svg>
+          </span>
+          <p class="text-slate-400"><strong class="font-semibold text-white">Hardening playbook:</strong> fast, step-by-step setup for password managers and two-factor authentication, in the order that protects you most.</p>
+        </li>
+        <li class="flex gap-4 rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-900/80 to-slate-900/30 p-6 backdrop-blur-xl">
+          <span class="flex h-10 w-10 flex-none items-center justify-center rounded-xl bg-emerald-400/10 text-emerald-300 ring-1 ring-emerald-400/20">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2 3.6 3 8 3s8-1 8-3V7M4 7c0 2 3.6 3 8 3s8-1 8-3M4 7c0-2 3.6-3 8-3s8 1 8 3m0 5c0 2-3.6 3-8 3s-8-1-8-3"/></svg>
+          </span>
+          <p class="text-slate-400"><strong class="font-semibold text-white">Ransomware-proof backups:</strong> the 3-2-1 rule explained in plain English, plus a quarterly restore test so you know your backups actually work.</p>
+        </li>
+        <li class="flex gap-4 rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-900/80 to-slate-900/30 p-6 backdrop-blur-xl">
+          <span class="flex h-10 w-10 flex-none items-center justify-center rounded-xl bg-emerald-400/10 text-emerald-300 ring-1 ring-emerald-400/20">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.7 0-3 .9-3 2s1.3 2 3 2 3 .9 3 2-1.3 2-3 2m0-8c1.1 0 2.1.4 2.6 1M12 8V7m0 1v8m0 0v1m0-1c-1.1 0-2.1-.4-2.6-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </span>
+          <p class="text-slate-400"><strong class="font-semibold text-white">Payment fraud rules:</strong> five verification rules that stop fake-invoice and wire-transfer scams before money leaves your account.</p>
+        </li>
+        <li class="flex gap-4 rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-900/80 to-slate-900/30 p-6 backdrop-blur-xl">
+          <span class="flex h-10 w-10 flex-none items-center justify-center rounded-xl bg-emerald-400/10 text-emerald-300 ring-1 ring-emerald-400/20">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+          </span>
+          <p class="text-slate-400"><strong class="font-semibold text-white">Incident plan &amp; calendar:</strong> a printable first-hour response checklist and a simple monthly-to-yearly maintenance schedule.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- PRICING + GUARANTEE -->
+    <section id="pricing" class="mx-auto max-w-5xl px-4 sm:px-6 py-12 scroll-mt-8">
+      <div class="grid gap-6 lg:grid-cols-5">
+
+        <!-- Price card -->
+        <div class="relative lg:col-span-3 rounded-3xl p-px bg-gradient-to-b from-emerald-400/40 via-slate-700/60 to-slate-800/40 shadow-2xl shadow-emerald-500/10">
+          <div class="h-full rounded-[calc(1.5rem-1px)] bg-slate-900/90 p-8 backdrop-blur-xl">
+            <span class="inline-flex items-center gap-2 rounded-full border border-amber-300/30 bg-amber-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-amber-200">
+              <span class="h-1.5 w-1.5 rounded-full bg-amber-300 animate-pulse" aria-hidden="true"></span>
+              Special Launch Offer
+            </span>
+            <h2 class="mt-4 text-2xl font-bold text-white">The complete Blueprint</h2>
+            <div class="mt-5 flex items-baseline gap-2">
+              <span class="text-5xl font-extrabold tracking-tight text-white">$19</span>
+              <span class="text-sm font-medium text-slate-400">USD · one-time payment</span>
+            </div>
+            <ul class="mt-6 space-y-3 text-sm text-slate-300">
+              <li class="flex gap-3"><svg class="h-5 w-5 flex-none text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>10-page PDF action guide with tickable checklists</li>
+              <li class="flex gap-3"><svg class="h-5 w-5 flex-none text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>30-day week-by-week rollout plan</li>
+              <li class="flex gap-3"><svg class="h-5 w-5 flex-none text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Fill-in AI use policy and emergency contact sheet</li>
+              <li class="flex gap-3"><svg class="h-5 w-5 flex-none text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Free updates to this edition</li>
+            </ul>
+            <a href="#checkout" class="mt-8 block w-full rounded-xl bg-gradient-to-r from-emerald-400 to-teal-400 px-8 py-4 text-center text-lg font-bold text-slate-950 shadow-lg shadow-emerald-500/20 transition hover:shadow-emerald-500/40 hover:brightness-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900">
+              Get Instant Access — $19
+            </a>
+            <p class="mt-3 text-center text-xs text-slate-500">Secure checkout · Instant PDF download</p>
+          </div>
+        </div>
+
+        <!-- Guarantee -->
+        <div class="lg:col-span-2 flex flex-col items-center justify-center rounded-3xl border border-slate-800 bg-slate-900/50 p-8 text-center backdrop-blur-xl">
+          <div class="relative flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-amber-300/20 to-amber-500/5 ring-1 ring-amber-300/30">
+            <div class="flex h-[4.5rem] w-[4.5rem] flex-col items-center justify-center rounded-full border border-dashed border-amber-300/40">
+              <span class="text-2xl font-extrabold leading-none text-amber-200">7</span>
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-amber-200/80">Day</span>
+            </div>
+          </div>
+          <h3 class="mt-5 text-xl font-bold text-white">7-Day Money-Back Guarantee</h3>
+          <p class="mt-3 text-sm leading-relaxed text-slate-400">
+            Read it, try the checklists. If it isn't useful for your business, email us within 7 days of purchase for a full refund. No forms, no hassle.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <div class="text-center">
+        <p class="text-sm font-semibold uppercase tracking-widest text-indigo-300/80">FAQ</p>
+        <h2 class="mt-3 text-2xl sm:text-3xl font-bold tracking-tight text-white">Questions, answered</h2>
+      </div>
+
+      <div class="mt-10 space-y-3">
+        <details class="group rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-xl open:border-slate-700 open:bg-slate-900/80 transition">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-semibold text-white">
+            I'm not technical. Will I be able to follow it?
+            <svg class="h-5 w-5 flex-none text-slate-400 transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="px-5 pb-5 text-sm leading-relaxed text-slate-400">Yes. It was written for owners, office managers and freelancers, not IT staff. Every page is a short explanation followed by a checklist, and most steps take minutes in apps you already use.</p>
+        </details>
+
+        <details class="group rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-xl open:border-slate-700 open:bg-slate-900/80 transition">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-semibold text-white">
+            How long does it take to put into practice?
+            <svg class="h-5 w-5 flex-none text-slate-400 transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="px-5 pb-5 text-sm leading-relaxed text-slate-400">The guide includes a 30-day plan that takes roughly 2–3 hours per week. You can do the most important steps, like turning on two-factor authentication for email and banking, in a single afternoon.</p>
+        </details>
+
+        <details class="group rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-xl open:border-slate-700 open:bg-slate-900/80 transition">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-semibold text-white">
+            Do I need to buy expensive security software?
+            <svg class="h-5 w-5 flex-none text-slate-400 transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="px-5 pb-5 text-sm leading-relaxed text-slate-400">No. Most steps use free settings already built into Google Workspace, Microsoft 365, your bank and your devices. The only recommended purchases are a password manager and, optionally, a couple of hardware security keys.</p>
+        </details>
+
+        <details class="group rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-xl open:border-slate-700 open:bg-slate-900/80 transition">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-semibold text-white">
+            Is it OK for my team to use ChatGPT or other AI tools?
+            <svg class="h-5 w-5 flex-none text-slate-400 transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="px-5 pb-5 text-sm leading-relaxed text-slate-400">Yes, with rules. The Blueprint shows you how to pick approved tools, adjust their privacy settings, and decide what data is safe to share, so your team gets the productivity benefits without leaking client information.</p>
+        </details>
+
+        <details class="group rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-xl open:border-slate-700 open:bg-slate-900/80 transition">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-semibold text-white">
+            Does this work outside the US?
+            <svg class="h-5 w-5 flex-none text-slate-400 transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="px-5 pb-5 text-sm leading-relaxed text-slate-400">The security habits apply anywhere. A few references, such as where to report fraud and breach-notification rules, are US-specific, so international readers should swap in their local equivalents.</p>
+        </details>
+
+        <details class="group rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-xl open:border-slate-700 open:bg-slate-900/80 transition">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-semibold text-white">
+            How does the 7-day guarantee work?
+            <svg class="h-5 w-5 flex-none text-slate-400 transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
+          </summary>
+          <p class="px-5 pb-5 text-sm leading-relaxed text-slate-400">Email us within 7 days of purchase and we'll refund you in full. No questions asked.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="mx-auto max-w-4xl px-4 sm:px-6 py-16">
+      <div class="relative overflow-hidden rounded-3xl border border-slate-800 bg-gradient-to-br from-indigo-600/20 via-slate-900/60 to-emerald-500/10 p-10 text-center backdrop-blur-xl">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">One scam email can cost more than a year of profit.</h2>
+        <p class="mx-auto mt-3 max-w-xl text-slate-400">Spend an afternoon this week closing the gaps attackers rely on.</p>
+        <a href="#checkout" class="mt-8 inline-block rounded-xl bg-gradient-to-r from-emerald-400 to-teal-400 px-8 py-4 text-base font-bold text-slate-950 shadow-lg shadow-emerald-500/20 transition hover:shadow-emerald-500/40 hover:brightness-110">
+          Get the Blueprint — $19
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800/80">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 py-8 text-xs leading-relaxed text-slate-500">
+        <p>Sources:
+          <a class="underline decoration-slate-700 underline-offset-2 hover:text-slate-300" href="https://www.verizon.com/business/resources/reports/dbir/" target="_blank" rel="noopener">Verizon 2025 Data Breach Investigations Report</a> ·
+          <a class="underline decoration-slate-700 underline-offset-2 hover:text-slate-300" href="https://www.ic3.gov/AnnualReport/Reports" target="_blank" rel="noopener">FBI IC3 2025 Internet Crime Report</a>.
+          The average-loss figure is reported BEC losses divided by complaints.
+        </p>
+        <p class="mt-3">This guide provides general educational information, not legal, financial or professional security advice.</p>
+
+        <!-- Legal links -->
+        <nav aria-label="Legal" class="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+          <a href="#privacy" data-legal class="text-slate-400 hover:text-white transition">Privacy Policy</a>
+          <a href="#terms" data-legal class="text-slate-400 hover:text-white transition">Terms of Service</a>
+          <a href="#refund" data-legal class="text-slate-400 hover:text-white transition">Refund Policy</a>
+          <a href="mailto:[support@yourdomain.com]" class="text-slate-400 hover:text-white transition">Contact</a>
+        </nav>
+
+        <!-- Legal sections -->
+        <div class="mt-6 space-y-3 text-sm">
+
+          <details id="privacy" class="group scroll-mt-6 rounded-2xl border border-slate-800 bg-slate-900/50 open:bg-slate-900/80 open:border-slate-700">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-semibold text-slate-200">
+              Privacy Policy
+              <svg class="h-4 w-4 flex-none text-slate-500 transition-transform group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
+            </summary>
+            <div class="space-y-3 px-5 pb-5 text-slate-400 leading-relaxed">
+              <p class="text-xs text-slate-500">Last updated: October 26, 2026</p>
+              <p><strong class="text-slate-200">Who we are.</strong> This website and the Small Business AI &amp; Cyber Hygiene Blueprint are operated by  Cyber Blueprint Digital, Paraná, Brazil ("we", "us"). Contact: contact.cyberblueprint@gmail.com.</p>
+              <p><strong class="text-slate-200">What we collect.</strong> When you buy, we receive your name, email address, country and order details. Payments are processed by our third-party payment provider (Cakto). We never see or store your full card number.</p>
+              <p><strong class="text-slate-200">How we use it.</strong> To deliver your purchase, send receipts and product updates, answer support requests, process refunds, prevent fraud and meet legal obligations. We only send marketing emails if you opt in, and every email includes an unsubscribe link.</p>
+              <p><strong class="text-slate-200">Who we share it with.</strong> Only service providers that help us run the business (payment processing, website hosting, email delivery and, if enabled, analytics or advertising tools), and authorities when the law requires it. We do not sell your personal information.</p>
+              <p><strong class="text-slate-200">Cookies and analytics.</strong> This site may use cookies or similar technologies to measure traffic and ad performance. You can block or delete cookies in your browser settings.</p>
+              <p><strong class="text-slate-200">How long we keep it.</strong> Order records are kept as long as needed for accounting, tax and legal purposes. Other data is deleted when no longer needed.</p>
+              <p><strong class="text-slate-200">Your rights.</strong> Depending on where you live (for example under the GDPR in the EU/UK or the CCPA in California), you may ask to access, correct, delete or export your data, or object to certain uses. Email [support@yourdomain.com] and we will respond within 30 days.</p>
+              <p><strong class="text-slate-200">Changes.</strong> We may update this policy and will change the date above when we do.</p>
+            </div>
+          </details>
+
+          <details id="terms" class="group scroll-mt-6 rounded-2xl border border-slate-800 bg-slate-900/50 open:bg-slate-900/80 open:border-slate-700">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-semibold text-slate-200">
+              Terms of Service
+              <svg class="h-4 w-4 flex-none text-slate-500 transition-transform group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
+            </summary>
+            <div class="space-y-3 px-5 pb-5 text-slate-400 leading-relaxed">
+              <p class="text-xs text-slate-500">Last updated: October 26, 2026</p>
+              <p><strong class="text-slate-200">The product.</strong> The Small Business AI &amp; Cyber Hygiene Blueprint is a digital PDF guide, delivered by email or download link right after payment. Nothing physical is shipped.</p>
+              <p><strong class="text-slate-200">Price and payment.</strong> The price is shown in US dollars at checkout and is charged once. There is no subscription. Your bank may apply currency-conversion or international fees.</p>
+              <p><strong class="text-slate-200">License.</strong> You may use the guide within your own business and share it with your own employees and contractors. You may not resell, redistribute, publish or upload it elsewhere, or present it as your own work.</p>
+              <p><strong class="text-slate-200">Educational content, no guarantee.</strong> The guide offers general educational information, not legal, financial or professional security advice. Following it reduces risk but cannot guarantee protection against every attack. You remain responsible for your own systems and decisions.</p>
+              <p><strong class="text-slate-200">Limitation of liability.</strong> To the maximum extent allowed by law, our total liability for any claim related to the product is limited to the amount you paid for it.</p>
+              <p><strong class="text-slate-200">Refunds.</strong> Covered by our 7-Day Refund Policy below.</p>
+              <p><strong class="text-slate-200">Governing law.</strong> These terms are governed by the laws of Brazil, without limiting any mandatory consumer rights in your country of residence.</p>
+              <p><strong class="text-slate-200">Contact.</strong> [contact.cyberblueprint@gmail.com]</p>
+            </div>
+          </details>
+
+          <details id="refund" class="group scroll-mt-6 rounded-2xl border border-slate-800 bg-slate-900/50 open:bg-slate-900/80 open:border-slate-700">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-semibold text-slate-200">
+              Refund Policy: 7-Day Money-Back Guarantee
+              <svg class="h-4 w-4 flex-none text-slate-500 transition-transform group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
+            </summary>
+            <div class="space-y-3 px-5 pb-5 text-slate-400 leading-relaxed">
+              <p class="text-xs text-slate-500">Last updated: October 26, 2026</p>
+              <p><strong class="text-slate-200">Full refund within 7 days.</strong> If the Blueprint isn't useful for your business, request a refund within 7 calendar days of purchase and we will refund 100% of the price. No questions asked.</p>
+              <p><strong class="text-slate-200">How to request it.</strong> Email [support@yourdomain.com] with the email address used at checkout (and your order number, if you have it), or use the refund option in your purchase confirmation from Cakto.</p>
+              <p><strong class="text-slate-200">Processing.</strong> We approve refunds within 2 business days, back to the original payment method. Depending on your bank or card issuer, it can take 5–10 business days to appear on your statement.</p>
+              <p><strong class="text-slate-200">After 7 days.</strong> Because the product is delivered digitally and instantly, requests made after the 7-day window are not eligible, except where the law of your country requires otherwise.</p>
+              <p><strong class="text-slate-200">Please contact us first.</strong> If you have any issue, email us before opening a chargeback with your bank. We'll resolve it faster.</p>
+            </div>
+          </details>
+        </div>
+
+        <p class="mt-6">&copy; 2026 Small Business AI &amp; Cyber Hygiene Blueprint · [Your Business Name]. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Open and scroll to a legal section when its link is clicked or the URL has #privacy, #terms or #refund
+    (function () {
+      function openFromHash() {
+        var id = location.hash.slice(1);
+        if (!['privacy', 'terms', 'refund'].includes(id)) return;
+        var el = document.getElementById(id);
+        if (el) { el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      }
+      window.addEventListener('hashchange', openFromHash);
+      document.addEventListener('DOMContentLoaded', openFromHash);
+      document.querySelectorAll('[data-legal]').forEach(function (a) {
+        a.addEventListener('click', function () {
+          var el = document.getElementById(a.getAttribute('href').slice(1));
+          if (el) el.open = true;
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
